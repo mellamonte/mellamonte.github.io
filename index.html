@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калашников Максим</title>
+</head>
+<body>
+    <h1 class="text">
+        Калашников Максим
+    </h1>
+    <h2 class="text">АДБ-21-07</h2>
+    <div class="image">
+    <img width="400" src="image1.jpg">
+    <img width="400" src="image2.jpg">
+    </div>
+    <span class="text" >Пол: мужской </span>
+    <span class="text" >Студент СТАНКИНА!!!</span>
+
+    <style>
+        @keyframes changeColor{
+            0%{
+                background-color: white;
+            }
+            100%{
+                background-color: black;
+            }  
+        }
+        @keyframes changeColorText{
+            0%{
+                color: black;
+            }
+            100%{
+                color: red;
+            }  
+        }
+        body{
+           animation: changeColor 5s infinite;
+           animation-direction: alternate;
+        }
+        .text{
+            display: grid;
+            justify-content: center;
+            animation: changeColorText 5s infinite;
+           animation-direction: alternate;
+        }
+        .image{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</body>
+</html>
